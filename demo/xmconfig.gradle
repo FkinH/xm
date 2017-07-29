@@ -17,12 +17,31 @@ buildscript {
 apply plugin: 'xm'
 
 import com.cms.cmxm.MethodCell
+import com.cms.cmxm.SimpleAdapter
+import org.objectweb.asm.ClassVisitor
+import org.objectweb.asm.MethodVisitor
+import org.objectweb.asm.Opcodes
 
 xmconfig {
 
     instrumentation = [
-            'com.fkinh.xm.MainActivity' : [new MethodCell('', '', {
+            'com.fkinh.xm.MainActivity' : [new MethodCell('onCreate', null, {
+                ClassVisitor cv, int access, String name, String desc, String signature, String[] exceptions ->
+                    MethodVisitor methodVisitor = cv.visitMethod(access, name, desc, signature, exceptions);
+                    MethodVisitor adapter = new SimpleAdapter(methodVisitor) {
+                        @Override
+                        void onStart() {
+                            //insert when method start
+                            methodVisitor.visitMethodInsn(Opcodes.INVOKESTATIC, "com/fkinh/xm/Agent", "xm", "()V");
+                        }
 
+                        @Override
+                        void onEnd() {
+                            //insert when method end
+                            methodVisitor.visitMethodInsn(Opcodes.INVOKESTATIC, "com/fkinh/xm/Agent", "xm", "()V");
+                        }
+                    }
+                    return adapter;
             })]
     ]
 
