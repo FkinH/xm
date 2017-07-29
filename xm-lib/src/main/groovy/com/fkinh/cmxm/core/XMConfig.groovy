@@ -1,6 +1,6 @@
-package com.cms.cmxm.core
+package com.fkinh.cmxm.core
 
-import com.cms.cmxm.MethodCell
+import com.fkinh.cmxm.MethodCell
 
 public class XMConfig {
     boolean enable = true

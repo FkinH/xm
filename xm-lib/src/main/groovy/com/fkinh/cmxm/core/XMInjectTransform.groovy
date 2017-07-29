@@ -1,12 +1,12 @@
-package com.cms.cmxm.core
+package com.fkinh.cmxm.core
 
 import com.android.annotations.NonNull
 import com.android.annotations.Nullable
 import com.android.build.api.transform.*
 import com.android.build.gradle.internal.pipeline.TransformManager
 import com.bryansharp.gradle.hibeaver.utils.*
-import com.cms.cmxm.MethodCell
-import com.cms.cmxm.SimpleModifyClassUtil
+import com.fkinh.cmxm.MethodCell
+import com.fkinh.cmxm.SimpleModifyClassUtil
 import groovy.io.FileType
 import org.apache.commons.codec.digest.DigestUtils
 import org.apache.commons.io.FileUtils

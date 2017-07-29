@@ -1,8 +1,8 @@
 package com.bryansharp.gradle.hibeaver.utils
 
 import com.android.build.gradle.BaseExtension
-import com.cms.cmxm.MethodCell
-import com.cms.cmxm.core.XMConfig
+import com.fkinh.cmxm.MethodCell
+import com.fkinh.cmxm.core.XMConfig
 import org.gradle.api.Project
 
 import java.util.regex.Pattern

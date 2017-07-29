@@ -1,4 +1,4 @@
-package com.cms.cmxm.core
+package com.fkinh.cmxm.core
 
 import com.android.build.gradle.AppExtension
 import com.android.build.gradle.BaseExtension

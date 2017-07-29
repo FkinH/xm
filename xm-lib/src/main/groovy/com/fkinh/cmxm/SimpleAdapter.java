@@ -1,4 +1,4 @@
-package com.cms.cmxm;
+package com.fkinh.cmxm;
 
 import com.bryansharp.gradle.hibeaver.utils.MethodLogAdapter;
 

@@ -16,8 +16,8 @@ buildscript {
 
 apply plugin: 'xm'
 
-import com.cms.cmxm.MethodCell
-import com.cms.cmxm.SimpleAdapter
+import com.fkinh.cmxm.MethodCell
+import com.fkinh.cmxm.SimpleAdapter
 import org.objectweb.asm.ClassVisitor
 import org.objectweb.asm.MethodVisitor
 import org.objectweb.asm.Opcodes

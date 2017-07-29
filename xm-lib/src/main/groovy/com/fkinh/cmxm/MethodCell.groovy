@@ -1,4 +1,4 @@
-package com.cms.cmxm;
+package com.fkinh.cmxm;
 
 /**
  * Author: jinghao fkinh26@gmail.com

@@ -1,6 +1,6 @@
-package com.cms.cmxm.ins
+package com.fkinh.cmxm.ins
 
-import com.cms.cmxm.MethodCell;
+import com.fkinh.cmxm.MethodCell;
 
 /**
  * Author: jinghao fkinh26@gmail.com
