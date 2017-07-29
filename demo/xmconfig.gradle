@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url uri('../xm-lib/repo')
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.1'
+        classpath 'xm:xm-lib:0.0.1'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+apply plugin: 'xm'
+
+import com.cms.cmxm.MethodCell
+
+xmconfig {
+
+    instrumentation = [
+            'com.fkinh.xm.MainActivity' : [new MethodCell('', '', {
+
+            })]
+    ]
+
+}

@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply from: 'xmconfig.gradle'
+
 
 android {
     compileSdkVersion 24
@@ -24,16 +26,3 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.1'
 }
 
-apply plugin: 'xm'
-
-import com.cms.cmxm.MethodCell
-
-xmconfig {
-
-    instrumentation = [
-            'com.fkinh.xm.MainActivity' : [new MethodCell('', '', {
-                
-            })]
-    ]
-
-}
